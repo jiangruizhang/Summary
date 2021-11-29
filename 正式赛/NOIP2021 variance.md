@@ -18,9 +18,9 @@
 1. 放在现在的$a$的后面，那么新的$a_{i+1}$就是目前所有$b$的和（与$j$无关），那么转移就是$f_{i+1,j+a_{i+1}}=f_{i,j}+a_{i+1}^2$。
 2. 放在现在的$a$的前面，就是让目前所有的$a$都加上$b_i$，然后在前面插入一个$0$，稍微推一下就行了，那么转移就是$f_{i+1,j+ib_{i}}=f_{i,j}+ib_i^2+2jb_i$。
 
-![pushback](D:\JiangRuizhang\20211120NOIP\variance\pushback.png)
+![pushback](https://github.com/jiangruizhang/Summary/blob/main/%E6%AD%A3%E5%BC%8F%E8%B5%9B/NOIP2021_variance_pushback.png)
 
-![pushfront](D:\JiangRuizhang\20211120NOIP\variance\pushfront.png)
+![pushfront](https://github.com/jiangruizhang/Summary/blob/main/%E6%AD%A3%E5%BC%8F%E8%B5%9B/NOIP2021_variance_pushfront.png)
 
 那么最终的答案就是$\min\{ nf_{n,j}-j^2\}$。
 
